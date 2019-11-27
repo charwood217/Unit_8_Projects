@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 3
+
+   Calendar Style Sheet
+   Author: Christian Harwood
+   Date: 11/26/19   
+
+   Filename:   lht_tables.css
+
+*/
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px){
+   table, tbody, tr, td, th, caption{
+      display: block;
+   }
+   thead, h1{
+      display: none;
+   }
+   caption{
+      color: white;
+      background-color: medium grey;
+      font-size: 1.5em;
+      line-height: 2em;
+   }
+   table#calendar td{
+      border: 1px dotted grey;
+      color: rgb(11,12,145);
+      position: relative;
+      padding-left: 40%;
+      min-height: 40px;
+   }
+   table#calendar tr:nth-last-of-type(odd){
+      background-color: rgb(255,235,178);
+      border: 2px solid grey;
+   }
+   
+}
+
+
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
